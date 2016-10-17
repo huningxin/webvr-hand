@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Hand Tracking in WebVR</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,107 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Hand Tracking and Gesture for WebVR</h2>
+					<p>
+						<small>Ningxin Hu / Intel / <a href="http://twitter.com/NingxinHu">@NingxinHu</a></small>
+					</p>
+				</section>
+				<section>
+					<blockquote>
+						&ldquo;They watch some demos or play a game and walk away saying how impressive it is, but almost everyone makes a remark about how they wish they had <b style="color: blue;">hands</b>.&rdquo;
+					</blockquote>
+					<p>
+						- Brandon Jones
+					</p>
+					<p>
+						<small><a href="http://blog.tojicode.com/2016/04/oculus-rift-and-htc-vive-review.html">Blog post on Oculus Rift and HTC Vive review</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>
+						Depth Camera
+					</h2>
+					<img style="border:0;" data-src="img/depth101.png">
+					<a href="https://www.w3.org/TR/mediacapture-depth/">Media Capture Depth Stream Extensions</a>
+				</section>
+				<section>
+					<h2>
+						Two Kinds of Hand Tracking
+					</h2>
+					<ul>
+						<li>Skeleton Tracking</li>
+						<li>Cursor Tracking</li>
+					</ul>
+				</section>
+				<section>
+					<h2>
+						Skeleton Tracking
+					</h2>
+					<img style="border:0;" src="img/skeleton-tracking.gif">
+					<p>
+						<small><a href="http://crosswalk-project.github.io/realsense-extensions-crosswalk/spec/hand-tracking.html">Crosswalk experimental hand tracking Web API</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>
+						Skeleton Tracking
+					</h2>
+					<ul>
+						<li>For avatar hand tracking</li>
+						<li>More computing</li>
+						<li>WebSocket impl by HW vendors, Web APIs?</li>
+					</ul>
+				</section>
+				<section>
+					<h2>
+						Cursor Tracking
+					</h2>
+					<img style="border:0;" src="img/cursor-tracking.gif">
+					<p>
+						<small><a href="https://software.intel.com/en-us/intel-realsense-sdk">Intel RealSense SDK</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>
+						Cursor Tracking
+					</h2>
+					<ul>
+						<li>For accurate UI control</li>
+						<li>Less computing</li>
+						<li>Pointer Event Extension?</li>
+					</ul>
+				</section>
+				<section>
+					<h2>
+						Gestures Recognition
+					</h2>
+					<img style="border:0;" src="img/click.gif">
+					<p>
+						<small><a href="https://support.microsoft.com/en-us/help/12644/hololens-use-gestures">HoloLens Use Gestures</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>
+						Gestures Recognition
+					</h2>
+					<ul>
+						<li>Pre-defined hand motions or postures</li>
+						<li>With hand position data</li>
+						<li>With head tracking data</li>
+					</ul>
+				</section>
+				<section>
+					<blockquote>
+						&ldquo;So my prediction is that in five years we'll see good avatar hand tracking and gesture-based simple interface control&rdquo;
+					</blockquote>
+					<p>
+						- Michael Abrash
+					</p>
+					<p>
+						<small><a href="https://www.youtube.com/watch?v=Mv_eIRv1Vk4">Oculus Connect 3 Keynote Speech</a></small>
+					</p>
+				</section>
 			</div>
 		</div>
 
